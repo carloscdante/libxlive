@@ -8,7 +8,7 @@
     "declarationDir": "./types",                   /* Generates corresponding '.d.ts' file. */
     "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     "sourceMap": true,                     /* Generates corresponding '.map' file. */
-    "outDir": "lib",                        /* Redirect output structure to the directory. */
+    "outDir": "build",                        /* Redirect output structure to the directory. */
 
     /* Strict Type-Checking Options */
     "strict": false,                           /* Enable all strict type-checking options. */
