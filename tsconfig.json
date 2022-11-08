@@ -4,7 +4,8 @@
     "module": "esnext",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
     "lib": ["ES2020",
       "dom"],                             /* Specify library files to be included in the compilation. */
-    "declaration": true,                   /* Generates corresponding '.d.ts' file. */
+    "declaration": true,
+    "declarationDir": "./types",                   /* Generates corresponding '.d.ts' file. */
     "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     "sourceMap": true,                     /* Generates corresponding '.map' file. */
     "outDir": "lib",                        /* Redirect output structure to the directory. */
@@ -21,9 +22,7 @@
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts"
-  ],
+    "src/**/*.ts"],
   "exclude": [
     "node_modules",
     "lib"

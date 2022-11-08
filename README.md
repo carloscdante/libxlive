@@ -1,6 +1,6 @@
 # Xbox Live Info
 
-Library for Xbox Live interaction. Manipulate and fetch data from Xbox Live accounts with easy to use utility functions!
+Library for Xbox Live account interaction. Manipulate and fetch data from Xbox Live accounts with easy to use utility functions!
 
 ## Authentication
 
@@ -11,7 +11,7 @@ Authentication for this module is provided by the [@xboxreplay/xboxlive-auth](ht
 
 ```typescript
 
-import { logOn } from "@mantyke/xbox"
+import { logOn } from "libxlive"
 
 logOn({
     username: "YOUR_USERNAME",
@@ -26,7 +26,7 @@ logOn({
 
 ```typescript
 
-import { loginWithRefreshToken } from "@mantyke/xbox"
+import { loginWithRefreshToken } from "libxlive"
 
 loginWithRefreshToken("YOUR_REFRESH_TOKEN", data => {
     console.log(data); // You are now logged in!
@@ -47,7 +47,7 @@ Now that you've logged in, you can do a lot of fun stuff with your Xbox Live dat
 
 ```typescript
 
-import { logOn, getAllAchievements } from "@mantyke/xbox"
+import { logOn, getAllAchievements } from "libxlive"
 
 logOn({
     username: "YOUR_USERNAME",
@@ -66,7 +66,7 @@ But there is a problem! This whole function is inefficient because it fetches al
 
 ```typescript
 
-import { logOn, getAchievementPage } from "@mantyke/xbox"
+import { logOn, getAchievementPage } from "libxlive"
 
 logOn({
     username: "YOUR_USERNAME",

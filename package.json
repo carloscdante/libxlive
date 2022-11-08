@@ -1,18 +1,24 @@
 {
-  "name": "xboxliveinfo",
+  "name": "xboxlive",
   "version": "0.1.0",
-  "description": "Xbox Live interaction module",
+  "description": "Library for Xbox Live account interaction.",
   "main": "lib/index.js",
   "author": "carloscdante",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "build": "tsc -p .",
-    "typedoc": "typedoc --out ./docs ./src/"
+    "typedoc": "typedoc --out ./docs ./src --theme stacks"
   },
   "dependencies": {
+    "@bangjelkoski/typedoc-theme": "^0.0.2",
+    "@janniks/typedoc-theme-stacks": "^1.2.3",
     "@xboxreplay/xboxlive-auth": "^4.0.0",
     "axios": "^1.1.3",
+    "qs": "^6.11.0",
     "typedoc": "^0.23.20",
+    "typedoc-plugin-missing-exports": "^1.0.0",
+    "typedoc-theme-oxide": "^0.1.6",
+    "typedoc-theme-qb": "^1.0.0",
     "typescript": "^4.8.4"
   },
   "types": "types/index.d.ts",
@@ -20,6 +26,7 @@
     "lib"
   ],
   "devDependencies": {
-    "@types/node": "^18.11.9"
+    "@types/node": "^18.11.9",
+    "typedoc": "^0.23.20"
   }
 }

@@ -1,7 +1,6 @@
 /**
  * UserLoginInitialization
  */
-
 interface UserLoginInitialization {
     username: string;
     password: string;
@@ -11,7 +10,7 @@ interface UserLoginInitialization {
  * XUIDLoginRequestReturn
  */
 interface XUIDLoginRequestReturn {
-    /** User's XUID (Xbox Live ID) */
+    /** User's XUID (Xbox Live ID)*/
     xuid: string;
     /** User hash */
     user_hash: string;
@@ -54,6 +53,28 @@ interface AchievementReturn {
 interface AchievementQuery {
     serviceConfigId: string;
     achievementId: string;
+}
+
+interface PagingInfo {
+    continuationToken: string;
+    totalItems: number;
+}
+
+/**
+ * Message
+ */
+
+interface Message {
+    
+}
+
+/**
+ * MessageReturn
+ */
+
+interface MessageReturnData {
+    results: Message[],
+    pagingInfo: PagingInfo
 }
 
 /**
