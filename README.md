@@ -72,8 +72,10 @@ logOn({
     username: "YOUR_USERNAME",
     password: "YOUR_PASSWORD"
 }, data => {
-    console.log(getAchievementPage(data)); // Fist page of user achievements
+    console.log(getAchievementPage(data)); // First page of user achievements
 });
+
+// usage is getAchievementPage(data, continuationToken) to get more pages
 
 ```
 
