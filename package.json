@@ -1,5 +1,5 @@
 {
-  "name": "xboxlive",
+  "name": "libxlive",
   "version": "0.2.0",
   "description": "Library for Xbox Live account interaction.",
   "main": "lib/index.js",
