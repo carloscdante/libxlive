@@ -7,13 +7,16 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "build": "tsc -p .",
-    "typedoc": "typedoc --out ./docs ./src --theme stacks"
+    "typedoc": "typedoc --out ./docs ./src --theme stacks",
+    "eslintconfig": "eslint --init"
   },
   "dependencies": {
     "@bangjelkoski/typedoc-theme": "^0.0.2",
     "@janniks/typedoc-theme-stacks": "^1.2.3",
     "@xboxreplay/xboxlive-auth": "^4.0.0",
     "axios": "^1.1.3",
+    "eslint": "^8.27.0",
+    "prettier": "^2.7.1",
     "qs": "^6.11.0",
     "typedoc": "^0.23.20",
     "typedoc-plugin-missing-exports": "^1.0.0",
@@ -25,6 +28,8 @@
   ],
   "devDependencies": {
     "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
     "typedoc": "^0.23.20"
   }
 }
