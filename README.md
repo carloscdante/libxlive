@@ -1,4 +1,4 @@
-# Xbox Live Info
+# LibXLive
 
 Library for Xbox Live account interaction. Manipulate and fetch data from Xbox Live accounts with easy to use utility functions!
 
