@@ -531,3 +531,65 @@ export const getTitleStatistics = async (userData: XUIDLoginRequestReturn, statA
         }
     })).data as TitleStatsReturnUser;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /titles/{titleId}/users/{xuid}/activities GET
+
+export const getUserMultiplayerLobby = async (userData: XUIDLoginRequestReturn, titleId: string) => {
+    return (await axios.get(`userstats.xboxlive.com/titles/${titleId}/users/${userData.xuid}/activities`, {
+        headers: {
+            Authorization: `XBL3.0 x=${userData.user_hash};${userData.xsts_token}`,
+            "x-xbl-contract-version": 2,
+        }
+    })).data as GetActivityResponse;
+}
+
+// /titles/{titleId}/users/{xuid}/activities POST
+
+// /titles/{titleId}/users/{xuid}/activities DELETE
+
+
+
+
+
+
+// /titles/{titleId}/activities/query POST
+
+
+
+
+
+
+
+
+
+// /titles/{titleId}/recentplayers POST
+
+// /titles/{titleId}/recentplayergroups/server POST
+
+
+
+
+
+
+
+
+
+// /titles/{titleId}/invites POST
+
+// /titles/{titleId}/invites/server POST

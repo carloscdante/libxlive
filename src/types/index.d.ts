@@ -155,6 +155,26 @@ interface StatisticsRequest {
     requestedscids: TitleStatsObject[];
 }
 
+interface ErrorResponse {
+    debugMessage: string;
+    errorCode: string;
+}
+
+type JoinRestriction = 'Followed' | 'InviteOnly' | 'Public'
+
+type Platform = 'Android' | 'IOS' | 'Nintendo' | 'PlayStation'
+
+interface GetActivityResponse {
+    connectionString: string;
+    currentPlayers: number;
+    groupId: string;
+    joinRestriction: JoinRestriction;
+    maxPlayers: number;
+    platform: Platform;
+    sequenceNumber: string;
+    titleId: number;
+}
+
 /**
  * Handler
  */
