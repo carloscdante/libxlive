@@ -465,3 +465,29 @@ export const getFriendSummary = async (userData: XUIDLoginRequestReturn) => {
         }
     })).data as PersonSummary;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const getUserStatistics = async (userData: XUIDLoginRequestReturn, stats: StatisticsRequest) => {
+    return (await axios.post(`userstats.xboxlive.com/batch`, {
+        body: stats,
+        headers: {
+            Authorization: `XBL3.0 x=${userData.user_hash};${userData.xsts_token}`,
+            "x-xbl-contract-version": 2,
+        }
+    })).data;
+}

@@ -133,6 +133,16 @@ interface PersonSummary {
     watermark: string;
 }
 
+interface TitleStatsObject {
+    scid: string;
+    requestedstats: string[];
+}
+
+interface StatisticsRequest {
+    requestedusers: string[];
+    requestedscids: TitleStatsObject[];
+}
+
 /**
  * Handler
  */
