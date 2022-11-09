@@ -101,3 +101,6 @@ logOn({
 This function, as called on the example, fetches only the first page of the user's achievements. Usually that means the first 36 (Microsoft could just change it).
 
 It returns the achievement page, alongside with a continuation token. you pass the continuation token as the second parameter in the function. For the first page, there is no need for this token!
+
+
+For the complete documentation and reference, go to the [docs](https://carloscdante.github.io/libxlive).

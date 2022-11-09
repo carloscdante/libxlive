@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "author": "carloscdante",
   "license": "GPL-3.0-or-later",
+  "repository": {"url": "https://github.com/carloscdante/libxlive"},
   "scripts": {
     "build": "tsc -p .",
     "typedoc": "typedoc --out ./docs ./src --theme stacks",
