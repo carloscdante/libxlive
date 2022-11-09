@@ -2,6 +2,7 @@
   "name": "libxlive",
   "version": "1.0.0",
   "description": "Library for Xbox Live account interaction.",
+  "keywords": ["xbox, xbox live, live, games, videogames, multiplayer, game"],
   "main": "lib/index.js",
   "author": "carloscdante",
   "license": "GPL-3.0-or-later",
