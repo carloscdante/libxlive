@@ -481,13 +481,53 @@ export const getFriendSummary = async (userData: XUIDLoginRequestReturn) => {
 
 
 
-
-export const getUserStatistics = async (userData: XUIDLoginRequestReturn, stats: StatisticsRequest) => {
+/**
+ * Gets statistics for a batch of titles and users.
+ * 
+ * @param userData The user's authentication data
+ * @param stats The request object for stats retrieval
+ * @returns 
+ */
+export const getBatchStatistics = async (userData: XUIDLoginRequestReturn, stats: StatisticsRequest) => {
     return (await axios.post(`userstats.xboxlive.com/batch`, {
         body: stats,
         headers: {
             Authorization: `XBL3.0 x=${userData.user_hash};${userData.xsts_token}`,
             "x-xbl-contract-version": 2,
         }
-    })).data;
+    })).data as TitleStatsReturnUser[];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Gets the authenticated user's statistics for a single title
+ * 
+ * @param userData The user's authentication data
+ * @param statArray The array of statistic names, e. g. headshots, kills, wins, etc.
+ * @param titleId The title's SCID (service config id)
+ * @returns A TitleStatsReturnUser object
+ */
+export const getTitleStatistics = async (userData: XUIDLoginRequestReturn, statArray: string[], titleId: string) => {
+    return (await axios.post(`userstats.xboxlive.com/users/xuid(${userData.xuid})/scids/${titleId}/stats/${statArray.join(',')}`, {
+        headers: {
+            Authorization: `XBL3.0 x=${userData.user_hash};${userData.xsts_token}`,
+            "x-xbl-contract-version": 2,
+        }
+    })).data as TitleStatsReturnUser;
 }

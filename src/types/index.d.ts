@@ -138,6 +138,18 @@ interface TitleStatsObject {
     requestedstats: string[];
 }
 
+interface StatisticSingle {
+    statname: string;
+    type: string;
+    value: number;
+}
+
+interface TitleStatsReturnUser {
+    xuid: string;
+    gamertag: string;
+    scids: StatisticSingle[];
+}
+
 interface StatisticsRequest {
     requestedusers: string[];
     requestedscids: TitleStatsObject[];
