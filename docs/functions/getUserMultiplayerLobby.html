@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>getSingleMessage | libxlive</title><meta name="description" content="Documentation for libxlive"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script async src="../assets/search.js" id="search-script"></script><style>
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>getUserMultiplayerLobby | libxlive</title><meta name="description" content="Documentation for libxlive"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script async src="../assets/search.js" id="search-script"></script><style>
         body {
           font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
         }
@@ -259,30 +259,22 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">libxlive</a></li>
-<li><a href="getSingleMessage.html">getSingleMessage</a></li></ul>
-<h1>Function getSingleMessage</h1></div>
+<li><a href="getUserMultiplayerLobby.html">getUserMultiplayerLobby</a></li></ul>
+<h1>Function getUserMultiplayerLobby</h1></div>
 <section class="tsd-panel">
 <ul class="tsd-signatures tsd-kind-function">
-<li class="tsd-signature tsd-anchor-link" id="getSingleMessage">get<wbr/>Single<wbr/>Message<span class="tsd-signature-symbol">(</span>userData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_internal_.XUIDLoginRequestReturn.html" class="tsd-signature-type" data-tsd-kind="Interface">XUIDLoginRequestReturn</a>, messageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AxiosResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#getSingleMessage" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getUserMultiplayerLobby">get<wbr/>User<wbr/>Multiplayer<wbr/>Lobby<span class="tsd-signature-symbol">(</span>userData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_internal_.XUIDLoginRequestReturn.html" class="tsd-signature-type" data-tsd-kind="Interface">XUIDLoginRequestReturn</a>, titleId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_internal_.GetActivityResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">GetActivityResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#getUserMultiplayerLobby" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Gets a single message through its ID.</p>
-
-<h3>Returns</h3><p>A message object.</p>
-</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>userData: <a href="../interfaces/_internal_.XUIDLoginRequestReturn.html" class="tsd-signature-type" data-tsd-kind="Interface">XUIDLoginRequestReturn</a></h5>
-<div class="tsd-comment tsd-typography"><p>The user&#39;s authentication data.</p>
-</div></li>
+<h5>userData: <a href="../interfaces/_internal_.XUIDLoginRequestReturn.html" class="tsd-signature-type" data-tsd-kind="Interface">XUIDLoginRequestReturn</a></h5></li>
 <li>
-<h5>messageId: <span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The message&#39;s id.</p>
-</div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AxiosResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<h5>titleId: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_internal_.GetActivityResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">GetActivityResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/carloscdante/libxlive/blob/1cb07ff/src/lib/xbox.ts#L259">lib/xbox.ts:259</a></li></ul></aside></li></ul></section></div>
+<li>Defined in <a href="https://github.com/carloscdante/libxlive/blob/1cb07ff/src/lib/xbox.ts#L553">lib/xbox.ts:553</a></li></ul></aside></li></ul></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <nav class="tsd-navigation primary">
 <div class="tsd-accordion-details">
@@ -300,9 +292,9 @@
 <li class="tsd-kind-function"><a href="getFriends.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>Friends</a></li>
 <li class="tsd-kind-function"><a href="getFriendsXUID.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>FriendsXUID</a></li>
 <li class="tsd-kind-function"><a href="getMessageInbox.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>Message<wbr/>Inbox</a></li>
-<li class="current tsd-kind-function"><a href="getSingleMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>Single<wbr/>Message</a></li>
+<li class="tsd-kind-function"><a href="getSingleMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>Single<wbr/>Message</a></li>
 <li class="tsd-kind-function"><a href="getTitleStatistics.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>Title<wbr/>Statistics</a></li>
-<li class="tsd-kind-function"><a href="getUserMultiplayerLobby.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>User<wbr/>Multiplayer<wbr/>Lobby</a></li>
+<li class="current tsd-kind-function"><a href="getUserMultiplayerLobby.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>User<wbr/>Multiplayer<wbr/>Lobby</a></li>
 <li class="tsd-kind-function"><a href="logOn.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>log<wbr/>On</a></li>
 <li class="tsd-kind-function"><a href="loginWithRefreshToken.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>login<wbr/>With<wbr/>Refresh<wbr/>Token</a></li>
 <li class="tsd-kind-function"><a href="sendMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>send<wbr/>Message</a></li></ul></nav>
