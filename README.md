@@ -2,6 +2,25 @@
 
 Library for Xbox Live account interaction. Manipulate and fetch data from Xbox Live accounts with easy to use utility functions!
 
+## Installation
+
+Installation is done via your favorite node package manager.
+
+### npm
+```shell
+npm install libxlive
+```
+
+### yarn
+```shell
+yarn add libxlive
+```
+
+### pnpm
+```shell
+pnpm install libxlive
+```
+
 ## Authentication
 
 Authentication for this module is provided by the [@xboxreplay/xboxlive-auth](https://github.com/XboxReplay/xboxlive-auth/) library. Kudos to Xboxreplay, the lib makes it really easy to authenticate users with no issues whatsoever.
